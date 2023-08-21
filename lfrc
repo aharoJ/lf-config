@@ -1,12 +1,10 @@
 set previewer ~/.config/lf/lf_kitty_preview
 set cleaner ~/.config/lf/lf_kitty_clean
 
-
 # Basic Settings
 set hidden false
 set ignorecase true
 set icons true
-
 
 
 # Custom Functions
@@ -22,7 +20,6 @@ cmd mkfile ${{
   $EDITOR $ans
 }}
 
-
 cmd setmacwallpaper ${{
     path="$f"
     osascript -e 'tell application "Finder" to set desktop picture to POSIX file "'"$path"'"'
@@ -33,8 +30,6 @@ cmd setmacwallpaper ${{
         echo "Operation failed."
     fi
 }}
-
-
 
 # Archive bindings
 cmd unarchive ${{
@@ -61,20 +56,16 @@ cmd trash ${{
     fi
   done
 }}
-
 cmd restore_trash ${{
   trash-restore
 }}
+
+
 
 # THIS WORKEDDDD 
 # cmd open_in_code ${{
 #     code "$PWD"
 # }}
-
-
-cmd kitty_preview ${{
-    kitty . && cmd-escape
-}}
 
 
 # Bindings
@@ -93,6 +84,9 @@ map zb setmacwallpaper
 map au unarchive
 map ae $wine "$f"
 
+
+
+
 # Basic Functions
 map . set hidden!
 map dd trash
@@ -104,7 +98,6 @@ map <enter> open
 map R reload
 map mf mkfile
 map md mkdir
-map bg setwallpaper
 map C clear
 
 # Movement
