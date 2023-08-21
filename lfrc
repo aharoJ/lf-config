@@ -86,7 +86,6 @@ map ae $wine "$f"
 
 
 
-
 # Basic Functions
 map . set hidden!
 map dd trash
